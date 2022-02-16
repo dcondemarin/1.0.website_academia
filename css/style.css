@@ -1,0 +1,435 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topo {
+  width: 35px;
+  height: 35px;
+  line-height: 32px;
+  background-color: #333;
+  color: #fff;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  transform: rotate(270deg);
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.topo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+header {
+  background-color: #444;
+  height: 120px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img, .navbar-brand img {
+  width: 120px;
+}
+
+nav li {
+  display: inline;
+  font-size: 18px;
+}
+nav a {
+  color: #bbb;
+  /* eixos: top e bottom, right e left */
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus, nav a:active {
+  text-decoration: underline;
+  color: #fff;
+  transition: all 1s;
+}
+
+/* nav a:active {
+  color: red;
+} */
+
+#carousel img {
+  max-height: 400px;
+  object-fit: cover;
+  /* object-position: 0 0; */
+}
+
+main {
+  background-color: #f0e3d7;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: -3px;
+}
+
+main section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+main h1, main h2, main h3 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+main h2 {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+iframe {
+  border: 0;
+}
+
+hr {
+ margin: 5px auto 40px;
+ width: 30%;
+ border: 0;
+ height: 2px;
+ background-image: black;
+ background-image: linear-gradient(to right, 
+                rgba(255, 0, 255, 0), 
+                rgba(0, 0, 0, 0.75), 
+                rgba(255, 0, 255, 0)
+  );
+}
+.treinamento-img {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 0 auto;
+  width: 95%; */
+}
+.treinamento-img div {
+  margin: 2%;
+}
+.treinamento-img img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* .treinamento-img div {
+  display: inline;
+  margin: 0 2%;
+} */
+.saiba-mais {
+  color: #fff;
+  background-color: blue;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: white solid 3px;
+  width: 150px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.saiba-mais:hover {
+  color: blue;
+  background-color: transparent;
+  background-color: #fff;
+  border: blue solid 3px;
+}
+
+.empresa {
+  display: flex;
+  justify-content: space-between;
+  padding: 250px 10% 100px;
+  background-image: url(../images/crossfit1.jpg);
+  background-size: 100%;
+}
+.empresa article {
+  background-color: #ef4a2e;
+  text-align: center;
+  border: solid #ccc 1px;
+  border-radius: 10px;
+  padding: 30px 15px;
+  margin: 0 10px;
+}
+
+.empresa i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.empresa p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.motivacao {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #f0e3d7;
+}
+
+.motivacao div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.motivacao div img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.motivacao aside {
+  width: 50%;
+  padding-right: 120px;
+}
+
+.motivacao h3 {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.motivacao aside img {
+  margin: 10px 0 20px;
+  width: 80%;
+  display: block;
+}
+.vantagens {
+  width: 40%;
+}
+
+footer {
+  background-color: #444;
+  color: #ccc;
+}
+footer address {
+  line-height: 20px;
+  /* sendo 3 valores: top - (right e left) - bottom */
+  padding: 50px 10% 20px;
+  /* margin e padding: sendo 4 valores > top - right - bottom - left */
+}
+
+footer p {
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 40px; 
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.cta .saiba-mais {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+/* .cta {
+  padding: 120px;
+}
+.cta h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.cta p {
+  line-height: 22px;
+  padding-bottom: 15px;
+} */
+.container-modalidades {
+  text-align: center;
+  background: #444;
+  padding: 100px 0;
+  color: white;
+  text-transform: uppercase;
+}
+.container-modalidades h2 {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.modalidades article {
+  width: 30%;
+}
+.modalidades {
+  display: flex;
+  justify-content: space-around;
+}
+.modalidades article img {
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 10px;
+  height: 230px;
+}
+
+.faca-parte {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 100px;
+  height: auto;
+}
+
+.faca-parte aside, .faca-parte > div {
+  width: 50%;
+}
+
+.faca-parte img {
+  width: 100%;
+  padding: 50px 50px 0;
+  height: auto;
+  object-fit: cover;
+}
+
+.faca-parte h3 {
+  font-size: 1.5rem;
+  padding: 4% 3% 0;
+  text-transform: uppercase;
+}
+
+.faca-parte-cta {
+  background: antiquewhite;
+  height: 200px;
+  width: 50%;
+  position: relative;
+  top: -15%;
+  left: 25%;
+}
+
+.faca-parte-content {
+  background: antiquewhite;
+  position: relative;
+  display: flex;
+  height: 200px;
+  padding: 0 5%;
+  width: 40%;
+  top: -30%;
+  left: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filiacao {
+  padding: 10% 5%;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom, #fff, #444);
+}
+.filiacao article {
+  width: 30%;
+}
+.filiacao h2, .filiacao h3 {
+  margin: 3% 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.redes-sociais img {
+  margin-top: 30%;
+  width: 10%;
+}
+
+.motivado img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 930px) {
+  .treinamento-img {
+    flex-direction: column;
+    width: 80%;
+    margin: 10% auto 7%;
+  }
+
+  .treinamento-img div {
+    margin-top: 5%;
+  }
+
+  .empresa {
+    background-image: none;
+    background-color: #BBB;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .empresa article {
+    width: 60%;
+    margin: 5% auto;
+  }
+
+  .motivacao aside {
+    padding-right: 5%;
+  }
+  .motivacao aside img {
+    width: 100%;
+  }
+  .motivacao div img,
+  .modalidades article,
+  .faca-parte aside,
+  .faca-parte div {
+    width: 80%;
+  }
+  .vantagens {
+    width: 100%;
+  }
+  .modalidades, .faca-parte {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalidades article img {
+    margin: 2% 0 15%;
+    height: 350px;
+    width: 70%;
+  }
+  .faca-parte img {
+    padding: 0;
+    height: auto;
+  }
+  .faca-parte-cta, .faca-parte-content {
+    top: -70px;
+    left: 10%;
+  }
+  .filiacao article {
+    width: 45%;
+  }
+  .filiacao h2, .filiacao h3 {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .cta h3 {
+    font-size: 1.3rem;
+  }
+
+  .faca-parte .faca-parte-cta,
+  .faca-parte .faca-parte-content {
+    width: 60%;
+    top: -100px;
+    left: 20%;
+  }
+  .faca-parte-cta h3,
+  .faca-parte-content h3 {
+    font-size: 1rem;
+  }
+  .faca-parte-content p {
+    font-size: .8rem;
+    line-height: 1.1rem;
+    margin-top: 4%;
+  }
+}

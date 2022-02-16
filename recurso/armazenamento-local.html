@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armazenamento Local</title>
+  <style>
+    body {
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Armazenamento Local</h2>
+  <h3>localStorage</h3>
+  <h3>sessionStorage</h3>
+  <hr>
+  <div>
+    <h2>Olá <span></span> </h2>
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome">
+      <br>
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha">
+      <br>
+      <label for="cor">Cor</label>
+      <input type="color" name="cor" id="cor">
+      <br>
+      <button type="submit" id="salvar">Salvar</button>
+      <button type="reset" id="limpar">Limpar</button>
+    </form>
+  </div>
+  <script>
+    // variaveis que acessam o form
+    var form = document.querySelector('form');
+    var inputNome = form.querySelector('#nome');
+    var inputSenha = form.querySelector('#senha');
+    var inputCor = form.querySelector('#cor');
+    var botaoReset = form.querySelector('#limpar');
+    // botao reset
+    botaoReset.onclick = function() {
+      localStorage.clear();
+      location.reload();
+    }
+    // evento que processa o forms
+    form.onsubmit = function(event) {
+      var nome = inputNome.value;
+      var senha = inputSenha.value;
+      var cor = inputCor.value;
+      // armazenamento localStorage / sessionStorage
+      localStorage.setItem('dadoNome', nome);
+      localStorage.setItem('dadoSenha', senha);
+      localStorage.setItem('dadoCor', cor);
+    }
+
+    if(
+      localStorage.getItem('dadoNome') != null &&
+      localStorage.getItem('dadoSenha') != null &&
+      localStorage.getItem('dadoCor') != null
+
+    ) {
+      document.body.style.backgroundColor = localStorage.getItem('dadoCor');
+      document.querySelector('#nome').value = localStorage.getItem('dadoNome');
+      document.querySelector('#senha').value = localStorage.getItem('dadoSenha');
+    }
+
+    window.addEventListener("scroll", function (event) {
+      var scroll = this.scrollY;
+      console.log(scroll)
+    });
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/menu-mobile.css">
+    <link rel="stylesheet" href="../css/registro.css">
+		<title>Registro</title>
+	</head>
+	<body>
+		<header>
+				<h2>
+					<img src="../images/logo_transparent.png" alt="marca da empresa" />
+				</h2>
+
+				<input type="checkbox" id="control-nav">
+				<label for="control-nav" class="control-nav"></label>
+				<label for="control-nav" class="control-nav-close"></label>
+
+				<nav>
+					<ul>
+						<li><a href="../index.html">home</a></li>
+						<li><a href="corrida.html">corrida</a></li>
+						<li><a href="bike.html">bike</a></li>
+						<li><a href="natacao.html">natação</a></li>
+						<li><a href="contato.html">contato</a></li>
+						<li><a href="#">registre-se</a></li>
+					</ul>
+				</nav>
+		</header>
+
+    <main>
+      <canvas id="relogio"></canvas>
+
+
+      <h2 id="titulo">Registro de Atletas</h2>
+
+      <form id="registro">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" autofocus>
+        </div>
+
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="text" name="idade" id="idade">
+        </div>
+
+        <div>
+          <label for="modalidade">Modalidades:</label>
+          <input type="text" name="modalidade" id="modalidade">
+        </div>
+
+        <div>
+          <label for="pontos">Pts.</label>
+          <input type="text" name="pontos" id="pontos">
+        </div>
+
+        <div>
+          <button class="saiba-mais inserir" id="inserir">Inserir</button>
+          <button class="saiba-mais listar" id="listar">Listar</button>
+          <button type="submit" class="saiba-mais" id="cadastrar">Cadastrar</button>
+        </div>
+      </form>
+
+      <p id="status"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Modalidades</th>
+            <th>Pontos</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-atleta">
+          <tr>
+            <td>Thiago</td>
+            <td>37</td>
+            <td>Bike</td>
+            <td>67</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+		<footer>
+			<address>
+				Rua Amador Bueno, 100 <br />
+				Vila industrial - Campinas <br />
+				CEP: 13035-030 <br />
+				Tel.: 19 1234-5678
+			</address>
+
+			<p> &copy; Alguns direitos reservados | &lt; Diego Condemarin &gt; </p>
+		</footer>
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/adiciona-atleta.js"></script>
+    <script src="../scripts/listar.js"></script>
+    <script src="../scripts/relogio.js"></script>
+	</body>
+</html>

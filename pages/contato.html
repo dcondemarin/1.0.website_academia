@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contato - Bootstarp</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="../images/logo_transparent.png" alt="marca da empresa" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="corrida.html">Corrida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bike.html">Bike</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="natacao.html">Natação</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#topo">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.html">Registre-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fim do nav -->
+  <!-- incio do carousel -->
+  <div id="carouselSports" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselSports" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselSports" data-slide-to="1"></li>
+      <li data-target="#carouselSports" data-slide-to="2"></li>
+      <li data-target="#carouselSports" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../images/run/run4.jpg" alt="corrida de rua">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../images/run/run7.jpg" alt="corrida de rua">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../images/bike/mtb5.jpg" alt="moutain bike">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../images/aqua/natacao4.jpg" alt="natação">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselSports" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselSports" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <!-- fim do carousel -->
+
+  <!-- inicio cta  -->
+  <div class="jumbotron mb-0">
+    <h1 class="display-4">Fale Conosco!</h1>
+    <p class="lead">Entre em contato com a gente para se inscrever em uma das nossas modalidades de corrida, bike ou
+        natação. Basta preencher o formulário abaixo.</p>
+    <hr class="my-4">
+    <p>Faça uma visita ao nosso Centro de Treinamento em <strong>Campinas-SP.</strong> Selecione "Rotas" no mapa abaixo para
+        visualizar o caminho até nós!</p>
+    <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target=".modal-news-letter">News Letter</button>
+  </div>
+  <!-- fim cta -->
+
+  <!-- modal -->
+  <div class="modal fade modal-news-letter" id="abrir-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Deseja receber nossas promoções</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nomeModal">Nome</label>
+              <input type="text" class="form-control" id="nomeModal" placeholder="Nome" required>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="emailModal">Email</label>
+              <input type="email" id="emailModal" placeholder="exemplo@email.com" class="form-control" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal" type="button">Fechar</button>
+          <button class="btn btn-primary" type="button">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / modal -->
+
+  <!-- inicio mapa -->
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0312092739805!2d-47.073797485034326!3d-22.9122196850091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8b8957ccd17%3A0x92193a637bab368d!2sR.%20Amador%20Bueno%2C%20100%20-%20Vila%20Industrial%20(Campinas)%2C%20Campinas%20-%20SP%2C%2013035-030!5e0!3m2!1spt-BR!2sbr!4v1626917145327!5m2!1spt-BR!2sbr" width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>  
+  </div>
+  <!-- fim mapa -->
+
+  <!-- inicio conexao DB -->
+  <div class="container">
+    <div id="mensagem-db"></div>
+  </div>
+  <!-- fim conexao DB -->
+
+  <!-- inicio form -->
+  <div class="container my-5">
+    <h2 class="mb-3">Formulário de Registro</h2>
+    <form>
+      <div class="form-row">
+        <!-- input nome -->
+        <div class="form-group col-md-6">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required autofocus>
+        </div>
+        <!-- input data nascimento -->
+        <div class="form-group col-md-6">
+          <label for="data">Data Nasc:</label>
+          <input type="date" class="form-control" id="data" name="data" required>
+        </div>
+      </div>
+      <!-- input genero -->
+      <div class="form-group">
+        <fieldset>
+          <legend>Sexo:</legend>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="masculino" value="masculino" name="sexo">
+            <label for="masculino" class="form-check-label">Masculino</label>
+          </div>
+
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="feminino" value="feminino" name="sexo">
+            <label for="feminino" class="form-check-label">Feminino</label>
+          </div>
+        </fieldset>
+      </div>
+      <!-- inputs telefone / email / select -->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="telefone">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone" required placeholder="11 9 1234-5678">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="modalidade">Modalidades</label>
+          <select id="modalidade" class="form-control" name="modalidade">
+            <option selected>Escolher...</option>
+            <option value="1">Corrida</option>
+            <option value="2">Bike</option>
+            <option value="3">Natação</option>
+            <option value="4">Triathlon</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required placeholder="exemplo@email.com">
+        </div>
+      </div>
+      <!-- categoria -->
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="profissional" name="categoria" value="profissional">
+          <label class="form-check-label" for="profissional">Profissional</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="amador" name="categoria" value="amador">
+          <label class="form-check-label" for="amador">Amador</label>
+        </div>
+      </div>
+      <button type="button" id="incluirDb" class="btn btn-primary">Enviar DB</button>
+    </form>
+    </div>
+  <!-- fim form -->
+
+  <!-- voltar ao topo --> 
+  <a href="#" class="topo">
+    >>
+  </a>
+  <!-- / voltar ao topo -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <address>
+      Rua Amador Bueno, 100 <br>
+      Vila industrial - Campinas <br>
+      CEP: 13035-030 <br>
+      Tel.: 19 1234-5678
+    </address>
+
+    <p> &copy; Alguns direitos reservados | &lt; Diego Condemarin &gt; </p>
+  </footer>
+  <!-- /footer -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../scripts/database.js"></script>
+</body>
+</html>

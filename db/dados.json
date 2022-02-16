@@ -1,0 +1,36 @@
+{
+  "atletas": [
+    {
+      "id": 1,
+      "nome": "Thiago",
+      "idade": 37,
+      "categoria": "Amador",
+      "modalidade": "Corrida",
+      "pontos": "83"
+    },
+    {
+      "id": 2,
+      "nome": "Ana",
+      "idade": 22,
+      "categoria": "Profissional",
+      "modalidade": "Bike",
+      "pontos": "68"
+    },
+    {
+      "id": 3,
+      "nome": "Telles",
+      "idade": 27,
+      "categoria": "Profissional",
+      "modalidade": "Natação",
+      "pontos": "57"
+    },
+    {
+      "id": 4,
+      "nome": "Henrique",
+      "idade": 22,
+      "categoria": "Amador",
+      "modalidade": "Bike",
+      "pontos": "88"
+    }
+  ]
+}
